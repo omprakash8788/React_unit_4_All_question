@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SearchResults from "./SearchResults";
 
-export const fetchData = async () => {
-  // make fetch request to the mentioned api and return the result here
-};
+// export const fetchData = async () => {
+//   // make fetch request to the mentioned api and return the result here
+// };
 
 function FlightSearch() {
   // on page load fetch the data (useEffect)
@@ -45,7 +45,7 @@ function FlightSearch() {
       </div>
       {/* if there are search results pass it to SearchResults component else print No Flights found  */}
      
-     { data2.length==0 ?  <div data-testid="no-flights" className="">
+     {data2.length==0 ?  <div data-testid="no-flights" className="">
         No Flights Found
       </div>
       : <SearchResults data={data2}/> 
