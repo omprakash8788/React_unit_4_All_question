@@ -4,6 +4,7 @@ const InputTags=()=>{
         <>
         <form>
             <input data-testid="input-name" type="text"/>
+            
             <input data-testid="input-height" type="text"/>
             <input data-testid="input-weight" type="text"/>
             <input data-testid="input-power" type="text"/> 

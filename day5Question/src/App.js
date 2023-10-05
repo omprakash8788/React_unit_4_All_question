@@ -11,6 +11,7 @@ function App() {
   const handleQty = (id, payload, name) => {
     let newData = product.map((item)=>item.id===id ? {...item, quantity: item.quantity+payload}: item)
     setProduct(newData)
+    console.log(newData);
    }
    let total=0;
    for(let i=0; i<product.length; i++){

@@ -1,13 +1,12 @@
 // import module.css here;
 
-
+import "./product.module.css"
 
 const Product = ({name,price,quantity,id,handleQty}) => {
 
-
   return (
     <>
-      <div  data-testid="product-container">
+      <div style={{border:"1px solid red", display:"flex" ,margin:"auto", alignItems:'center', marginLeft:"398px", marginRight:"398px", padding:"10px", paddingLeft:"83px", gap:"15px"}}  data-testid="product-container">
         <h2 data-testid="product-name">{name}</h2>
         <h2 data-testid="product-price">{price}</h2>
         <button onClick={()=>handleQty(id, 1, name)} data-testid="quantity-increment">+</button>
